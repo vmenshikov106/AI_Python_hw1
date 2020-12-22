@@ -2,10 +2,8 @@
 Об окончании ввода данных свидетельствует пустая строка.
 """
 
-with open('task_1.txt', 'w') as f_o:
-    while True:
-        line = f"{input('Введите текст: ')}\n"
-        if line == "\n":
-            break
-        f_o.write(line)
+# my_f = open("file.txt", "x")
+# str_list = ('\n'.join(list(input("Введите что-нибудь: ").split())))
+# my_f.writelines(str_list)
+# my_f.close()
 
