@@ -1,0 +1,59 @@
+class Tree(object):
+    
+    def __init__(self, root, left=None, right=None):
+        assert root and type(root) == Node
+        if left: assert type(left) == Tree and left.root < root
+        if right: assert type(right) == Tree and root < right.root
+
+        self.left = left
+        self.root = root
+        self.right = right
+        
+    def is_leaf(self):
+        return not(self.left or self.right)
+        
+    
+    def __str__(self):
+        pass
+    
+    def __eq__(self, other):
+        pass
+    
+    def __ne__(self, other):
+        pass
+
+class Node(object):
+    
+    def __init__(self, value, weight=1):
+        self.value = value
+        self.weight = weight
+    
+    def __str__(self):
+        return '%s:%d' % (self.value, self.weight)   
+    
+    def __lt__(self, other):
+        return self.value < other.value
+    
+    def __gt__(self, other):
+        return self.value > other.value
+    
+    def __eq__(self, other):
+        return self.value == other.value 
+
+    def __ne__(self, other):
+        return self.value != other.value 
+
+
+def cost(tree, depth=1):
+    '''
+    Возвращает стоимость дерева с глубоким корнем
+    '''
+    pass
+
+def make_min_tree(node_list):
+    '''
+    node_list - это список Node объектов
+    Pre-cond: len(node_list > 0) и node_list сортируется в порядке возрастания
+    Возвращает дерево с минимальным весом всех узлов в node_list.
+    '''    
+    pass
