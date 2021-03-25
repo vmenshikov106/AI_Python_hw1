@@ -1,0 +1,28 @@
+# Get last ascending number from right - this is our pivot or boundary
+# Получаем последнее число справа по возрастанию - это точка поворота (граница)
+
+i = len(nums)-1
+
+while i > 0 and nums[i-1] >= nums[i]:
+    i-=1
+ 
+ 
+# swap number just to left of pivot  with the first number from end of the array  that is greater than it
+# меняем местами номер слева от точки поворота с первым числом от конца массива, который больше его
+
+if i != 0:
+    j = len(nums)-1
+    while j > 0 and nums[j] <= nums[i-1]:
+        j-=1
+    nums[j], nums[i-1] = nums[i-1], nums[j]
+        
+              
+# reverse the array from i-len(nums)-1
+# реверс массива i-len(nums)-1
+
+k = i
+m = len(nums)-1
+while k < m:
+    nums[k], nums[m] = nums[m], nums[k]
+    m-=1
+    k+=1
