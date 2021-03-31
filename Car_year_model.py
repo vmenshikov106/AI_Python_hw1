@@ -17,7 +17,7 @@ class Auto:
             self.__year = year
 
     def get_auto_year(self):
-        return f"Автомобиль выпущен в {str(self.year)} году"
+        return f"Автомобиль был выпущен в {str(self.year)} году"
 
 a = Auto(2090)
 print(a.get_auto_year())
