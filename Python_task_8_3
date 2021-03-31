@@ -23,7 +23,7 @@ while True:
         if element.lower() == "stop":
             break
         if not element.isdigit():
-            raise OnlyNumbers("Введено не число!")
+            raise OnlyNumbers("Введено не числовое значение!")
         elements.append(element)
     except OnlyNumbers as err:
         print(err)
