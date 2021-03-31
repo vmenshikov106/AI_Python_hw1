@@ -46,7 +46,7 @@ class Cell:
     def __sub__(self, other):
         if self.nums - other.nums > 0:
             return Cell(self.nums - other.nums)
-        raise ValueError("Ячеек в первой клетке меньше. Вычитание невозможно.")
+        raise ValueError("В первой клетке меньше ячеек! Вычитание невозможно.")
 
     def __mul__(self, other):
         return Cell(self.nums * other.nums)
