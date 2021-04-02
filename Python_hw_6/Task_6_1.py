@@ -20,7 +20,7 @@ class TrafficLight:
         while run_count:
             current_light_value = next(colors_iteration)
             if TrafficLight.prev_colors[current_light_value] != prev_color:
-                raise ValueError("Нарушен порядок!")
+                raise ValueError("Нарушен порядок очерёдности отображения цветов!")
             print(f"Сейчас горит сигнал: {current_light_value}"
                   f"{TrafficLight.__colors[current_light_value]} сек."
                   f"(Предыдущий: {prev_color})")
