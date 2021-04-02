@@ -13,7 +13,7 @@
 #         salary = int(salary)
 #         salarys.append(salary)
 #         if salary < 20000:
-#             print('Оклад менее 20. тыс. у сотрудников: ', name)
+#             print('Оклад менее 20 000 у сотрудников: ', name)
 #
 #     print("Средний доход сотрудников: ", round(sum(salarys) / len(salarys), 2))
 
