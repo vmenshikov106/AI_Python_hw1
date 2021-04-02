@@ -2,7 +2,7 @@ class OwnError(Exception):  # создание дочернего класса �
     def __init__(self, txt):
         self.txt = txt
 
-inp_data = input("Введите положительное число: ")
+inp_data = input("Введите неотрицательное число: ")
 
 try:
     inp_data = int(inp_data)
