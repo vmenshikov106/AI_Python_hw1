@@ -3,7 +3,7 @@
 """
 
 # my_f = open("file.txt", "x")
-# str_list = ('\n'.join(list(input("Введите что-нибудь: ").split())))
+# str_list = ('\n'.join(list(input("Введите какие-нибудь данные: ").split())))
 # my_f.writelines(str_list)
 # my_f.close()
 
