@@ -18,11 +18,11 @@ class Data:
     def validation(date: "Data"):
         parsed_data = date.datestring.split("-")
         if len(parsed_data[2]) not in {2, 4}:
-            raise ValueError("Невалидный год")
+            raise ValueError("Неверный год")
         if not 1 <= int(parsed_data[1]) <= 12:
-            raise ValueError("Невалидный месяц")
+            raise ValueError("Неверный месяц")
         if not 1 <= int(parsed_data[0]) <= 31:
-            raise ValueError("Невалидное число")
+            raise ValueError("Неверное число")
         print("Валидация пройдена успешно")
 
 
