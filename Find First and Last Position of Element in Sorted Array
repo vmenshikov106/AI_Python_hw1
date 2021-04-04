@@ -1,7 +1,7 @@
 class Solution:
     def searchRange(self, nums, target):
         # find the index of the leftmost appearance of `target`. if it does not appear, return [-1, -1] early.
-        # находим индекс крайнего левого `target`. если его нет, возвращаем [-1, -1]
+        # находим индекс крайнего левого `target`. Если его нет, возвращаем [-1, -1]
         for i in range(len(nums)):
             if nums[i] == target:
                 left_idx = i
