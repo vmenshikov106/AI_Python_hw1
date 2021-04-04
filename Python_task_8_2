@@ -6,7 +6,7 @@
 
 
 class MyOwnZeroDivisionError(Exception):
-    def __init__(self, txt="Деление на ноль!!!"):
+    def __init__(self, txt="Деление на ноль!"):
         self.txt = txt
 
 
