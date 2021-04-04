@@ -52,7 +52,7 @@ def cost(tree, depth=1):
 
 def make_min_tree(node_list):
     '''
-    node_list - это список Node объектов
+    node_list - это список Node-объектов
     Pre-cond: len(node_list > 0) и node_list сортируется в порядке возрастания
     Возвращает дерево с минимальным весом всех узлов в node_list.
     '''    
