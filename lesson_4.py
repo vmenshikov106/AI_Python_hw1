@@ -6,7 +6,7 @@
 
 # from sys import argv
 # script_name, virabotka_v_chasah, stavka_v_chas, premia = argv
-# salary = (int(virabotka_v_chasah) * int(stavka_v_chas)) + int(premia)
+# salary = (int(vyrabotka_v_chasah) * int(stavka_v_chas)) + int(premia)
 # print('Заработная плата: ', salary)
 
 """Задача 2. Представлен список чисел. Необходимо вывести элементы исходного списка,
