@@ -17,7 +17,7 @@ time = int(input('Введите время в секундах: '))
 seconds = time
 minutes = seconds // 60
 hours = minutes // 60
-print("Введённое время в секундах в часах равно")
+print("Введённое время в секундах в часах = ")
 print("%02d:%02d:%02d" % (hours, minutes % 60, seconds % 60))
 
 """Задача №3
