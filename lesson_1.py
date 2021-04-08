@@ -58,7 +58,7 @@ if proceeds > costs:
     profitability = profit/proceeds
     print('Фирма работает с прибылью, выручка больше издержек')
     print('Рентабельность фирмы - ', (profit / proceeds))
-    employees = int(input('Сколько сотрудников в вашей фирме? '))
+    employees = int(input('Какое количество сотрудников в вашей фирме? '))
     print('Прибыль фирмы в расчёте на одного сотрудника составляет: ', (profit/employees))
 else:
     print('Фирма работает в убыток :((')
