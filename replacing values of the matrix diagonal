@@ -1,0 +1,9 @@
+import random
+
+
+size = 5
+
+matrix = [[random.randint(1, 10) for _ in range(size)] for _ in range(size)]
+for line in matrix:
+    for item in line:
+        print(f'{item:>4}', end='')
