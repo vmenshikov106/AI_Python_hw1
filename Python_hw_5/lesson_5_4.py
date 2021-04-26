@@ -1,5 +1,4 @@
-"""
-Создать (не программно) текстовый файл со следующим содержимым:
+"""Создать (не программно) текстовый файл со следующим содержимым:
 One — 1
 Two — 2
 Three — 3
@@ -9,14 +8,15 @@ Four — 4
 Новый блок строк должен записываться в новый текстовый файл.
 """
 
-# num_dict = {"One": "Один",
-#             "Two": "Два",
-#             "Three": "Три",
-#             "Four": "Четыре"}
-#
-# with open("task_4_1.txt", "r", encoding="UTF-8") as f_o:
-#     with open("task_4_2.txt", "w", encoding="UTF-8") as final_file:
-#         lines = f_o.readlines()
-#         for line in lines:
-#             num_list = line.split(" — ")
-#             final_file.write(f"{num_dict[num_list[0]]} — {num_list[1]}")
+ 
+num_dict = {"One": "Один",
+            "Two": "Два",
+            "Three": "Три",
+            "Four": "Четыре"}
+
+with open("task_4_1.txt", "r", encoding="UTF-8") as f_o:
+    with open("task_4_2.txt", "w", encoding="UTF-8") as final_file:
+        lines = f_o.readlines()
+        for line in lines:
+            num_list = line.split(" — ")
+            final_file.write(f"{num_dict[num_list[0]]} — {num_list[1]}")
