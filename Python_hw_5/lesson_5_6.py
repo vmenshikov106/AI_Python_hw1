@@ -1,5 +1,4 @@
-"""
-Необходимо создать (не программно) текстовый файл, где каждая строка описывает учебный предмет и наличие
+"""Необходимо создать (не программно) текстовый файл, где каждая строка описывает учебный предмет и наличие
 лекционных, практических и лабораторных занятий по этому предмету и их количество. Важно, чтобы для каждого предмета
 не обязательно были все типы занятий. Сформировать словарь, содержащий название предмета и общее количество занятий по
 нему. Вывести словарь на экран.
@@ -13,11 +12,11 @@
 {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 """
 
-# my_dict = {}
-# with open("task_6.txt", encoding="UTF-8") as f_o:
-#     for line in f_o:
-#         name, stats = line.split(":")
-#         name_sum = sum(map(int, "".join([i for i in stats if i == " " or i.isdigit()]).split()))
-#         my_dict[name] = name_sum
-# print(my_dict)
+my_dict = {}
+with open("task_6.txt", encoding="UTF-8") as f_o:
+    for line in f_o:
+        name, stats = line.split(":")
+        name_sum = sum(map(int, "".join([i for i in stats if i == " " or i.isdigit()]).split()))
+        my_dict[name] = name_sum
+print(my_dict)
 
