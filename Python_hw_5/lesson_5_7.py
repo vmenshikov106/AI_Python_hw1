@@ -1,5 +1,4 @@
-"""
-Создать (не программно) текстовый файл, в котором каждая строка должна содержать данные о фирме:
+"""Создать (не программно) текстовый файл, в котором каждая строка должна содержать данные о фирме:
 название, форма собственности, выручка, издержки.
 
 Пример строки файла: firm_1 ООО 10000 5000.
@@ -18,21 +17,24 @@
 Подсказка: использовать менеджеры контекста.
 """
 
-# import json
-#
-# with open("task_7.json", "w") as j_file:
-#     with open("task_7.txt", "r") as f_o:
-#         subjects = {}
-#         analitycs = {}
-#         total_profit, profitable_cmp = 0, 0
-#         lines = f_o.read().split("\n")
-#         for company_info in lines:
-#             company_info = company_info.split()
-#             profit = int(company_info[2]) - int(company_info[3])
-#             subjects[company_info[0]] = profit
-#             if profit > 0:
-#                 total_profit += profit
-#                 profitable_cmp += 1
-#             analitycs["avegare"] = total_profit / profitable_cmp
-#         all_list = [subjects, analitycs]
-#     json.dump(all_list, j_file)
+import json
+
+
+with open("task_7.json", "w") as j_file:
+    with open("task_7.txt", "r") as f_o:
+        subjects = {}
+        analitycs = {}
+        total_profit, profitable_cmp = 0, 0
+        lines = f_o.read().split("\n")
+        for company_info in lines:
+            company_info = company_info.split()
+            profit = int(company_info[2]) - int(company_info[3])
+            subjects[company_info[0]] = profit
+            if profit > 0:
+                total_profit += profit
+                profitable_cmp += 1
+            analitycs["avegare"] = total_profit / profitable_cmp
+         all_list = [subjects, analitycs]
+    json.dump(all_list, j_file)
+    
+    
