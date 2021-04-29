@@ -30,14 +30,14 @@ print(anketa('Иван', 'Петров', '2000', 'Москва', 'ivan@mail.com'
 """Реализовать функцию my_func(), которая принимает три позиционных аргумента,
 и возвращает сумму наибольших двух аргументов."""
 
-# def my_func(var_1, var_2, var_3):
-#     if var_1 < var_2 and var_1 < var_3:
-#         return var_2 + var_3
-#     elif var_2 < var_1 and var_2 < var_3:
-#         return var_1 + var_3
-#     elif var_3 < var_1 and var_3 < var_2:
-#         return var_1 + var_2
-# print(my_func(3, 5, 1))
+def my_func(var_1, var_2, var_3):
+    if var_1 < var_2 and var_1 < var_3:
+        return var_2 + var_3
+    elif var_2 < var_1 and var_2 < var_3:
+        return var_1 + var_3
+    elif var_3 < var_1 and var_3 < var_2:
+        return var_1 + var_2
+print(my_func(3, 5, 1))
 
 """Программа принимает действительное положительное число x и целое отрицательное число y.
 Необходимо выполнить возведение числа x в степень y.
