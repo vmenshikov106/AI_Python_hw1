@@ -23,9 +23,9 @@ while True:
 Функция должна принимать параметры как именованные аргументы.
 Реализовать вывод данных о пользователе одной строкой."""
 
-# def anketa (name, s_name, birth, town, email, phone):
-#     return f'{name} {s_name} {birth} {town} {email} {phone}'
-# print(anketa('Иван', 'Петров', '2000', 'Москва', 'ivan@mail.com', '+79876543210'))
+def anketa (name, s_name, birth, town, email, phone):
+    return f'{name} {s_name} {birth} {town} {email} {phone}'
+print(anketa('Иван', 'Петров', '2000', 'Москва', 'ivan@mail.com', '+79876543210'))
 
 """Реализовать функцию my_func(), которая принимает три позиционных аргумента,
 и возвращает сумму наибольших двух аргументов."""
