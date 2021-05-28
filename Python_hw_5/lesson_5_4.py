@@ -1,4 +1,4 @@
-"""Задача: создать (не программно) текстовый файл со следующим содержимым:
+"""4. Создать (не программно) текстовый файл со следующим содержимым:
 One — 1
 Two — 2
 Three — 3
@@ -20,3 +20,5 @@ with open("task_4_1.txt", "r", encoding="UTF-8") as f_o:
         for line in lines:
             num_list = line.split(" — ")
             final_file.write(f"{num_dict[num_list[0]]} — {num_list[1]}")
+
+        
